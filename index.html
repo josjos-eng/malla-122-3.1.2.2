@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Malla Curricular Interactiva ingenieria industrial - JG</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1><i class="fas fa-graduation-cap"></i> Malla Curricular Interactiva de ingenieria industrial</h1>
+            <p>Visualiza y gestiona tu progreso académico</p>
+        </header>
+        
+        <section class="login-section" id="login-section">
+            <h2><i class="fas fa-user-graduate"></i> Ingresa tus datos</h2>
+            <div class="input-group">
+                <label for="name-input">Nombre Completo:</label>
+                <input type="text" id="name-input" placeholder="Ej: Juan Pérez">
+            </div>
+            <div class="input-group">
+                <label for="ru-input">Registro Universitario :</label>
+                <input type="text" id="ru-input" placeholder="Ej: 202104238" maxlength="9">
+            </div>
+            <button class="btn" id="login-btn">
+                <i class="fas fa-sign-in-alt"></i> Acceder a mi Malla
+            </button>
+            <p class="info-text">
+                <i class="fas fa-info-circle"></i> tu número de registro universitario unico.
+                Los datos se guardarán permanentemente en tu navegador.
+            </p>
+        </section>
+        
+        <section class="malla-section" id="malla-section">
+            <div class="user-info">
+                <div class="user-details">
+                    <i class="fas fa-user"></i>
+                    <div>
+                        <h3 id="current-user">Usuario</h3>
+                        <p>RU: <span id="current-ru">20210000</span></p>
+                    </div>
+                </div>
+                <button class="btn" id="change-user">
+                    <i class="fas fa-exchange-alt"></i> Cambiar Usuario
+                </button>
+            </div>
+            
+            <div class="instructions">
+                <h3><i class="fas fa-lightbulb"></i> Instrucciones de uso</h3>
+                <ul>
+                    <li><strong>Haz clic en cada materia</strong> para cambiar su estado: Pendiente → Aprobada → Aplazada</li>
+                    <li>Los colores indican el estado de cada materia</li>
+                    <li>Tu progreso se guarda automáticamente y estará disponible en futuras visitas</li>
+                </ul>
+            </div>
+            
+            <div class="semesters-container" id="malla-container">
+                <!-- La malla curricular se generará dinámicamente aquí -->
+            </div>
+            
+            <div class="legend">
+                <div class="legend-item">
+                    <div class="color-dot pending"></div>
+                    <span>Pendiente</span>
+                </div>
+                <div class="legend-item">
+                    <div class="color-dot approved"></div>
+                    <span>Aprobada</span>
+                </div>
+                <div class="legend-item">
+                    <div class="color-dot failed"></div>
+                    <span>Aplazada</span>
+                </div>
+            </div>
+        </section>
+        
+        <footer>
+            <p>Desarrollado por JG FICH | Malla Curricular Interactiva &copy; 2025</p>
+        </footer>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
