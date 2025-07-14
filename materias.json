@@ -1,0 +1,108 @@
+{
+    "carrera": "Plan 122-3",
+    "semestres": [
+        {
+            "numero": 1,
+            "cursos": [
+                {"codigo": "QMC-100", "nombre": "QUIMICA GENERAL"},
+                {"codigo": "FIS-100", "nombre": "FISICA BASICA I"},
+                {"codigo": "MEC-101", "nombre": "DIBUJO TECNICO I"},
+                {"codigo": "MAT-101", "nombre": "CALCULO I"},
+                {"codigo": "MAT-100", "nombre": "ALGEBRA I"}
+            ]
+        },
+        {
+            "numero": 2,
+            "cursos": [
+                {"codigo": "QMC-200", "nombre": "QUIMICA ORGANICA", "requisitos": ["QMC-100"]},
+                {"codigo": "FIS-102", "nombre": "FISICA BASICA II", "requisitos": ["FIS-100", "MAT-101"]},
+                {"codigo": "MAT-204", "nombre": "INFORMATICA I", "requisitos": ["MEC-101"]},
+                {"codigo": "MAT-102", "nombre": "CALCULO II", "requisitos": ["MAT-101"]},
+                {"codigo": "MAT-103", "nombre": "ALGEBRA II", "requisitos": ["MAT-100"]},
+                {"codigo": "IND-100", "nombre": "ECONOMIA GENERAL", "requisitos": ["MAT-100"]}
+            ]
+        },
+        {
+            "numero": 3,
+            "cursos": [
+                {"codigo": "QMC-206", "nombre": "FISICOQUIMICA", "requisitos": ["FIS-102", "QMC-200"]},
+                {"codigo": "FIS-200", "nombre": "FISICA BASICA III", "requisitos": ["FIS-102", "MAT-102"]},
+                {"codigo": "MEC-203", "nombre": "CIENCIAS DE LOS MATERIALES", "requisitos": ["MAT-204"]},
+                {"codigo": "MAT-207", "nombre": "ECUACIONES DIFERENCIALES", "requisitos": ["MAT-102"]},
+                {"codigo": "IND-110", "nombre": "PROBABILIDAD Y ESTADISTICA", "requisitos": ["MAT-103"]},
+                {"codigo": "IND-130", "nombre": "CONTABILIDAD INDUSTRIAL", "requisitos": ["IND-100"]}
+            ]
+        },
+        {
+            "numero": 4,
+            "cursos": [
+                {"codigo": "MEC-244", "nombre": "TERMODINAMICA TECNICA", "requisitos": ["QMC-206"]},
+                {"codigo": "MEC-200", "nombre": "RESISTENCIA DE LOS MATERIALES", "requisitos": ["FIS-200", "MEC-203"]},
+                {"codigo": "IND-206", "nombre": "NORMAS LEGALES", "requisitos": ["MAT-207"]},
+                {"codigo": "IND-120", "nombre": "ESTADISTICA MATEMATICA", "requisitos": ["IND-110"]},
+                {"codigo": "IND-140", "nombre": "MERCADOTECNIA INDUSTRIAL", "requisitos": ["IND-130"]}
+            ]
+        },
+        {
+            "numero": 5,
+            "cursos": [
+                {"codigo": "MEC-265", "nombre": "MAQUINAS TERMICAS", "requisitos": ["MEC-244"]},
+                {"codigo": "MEC-242", "nombre": "TECNOLOGIA MECANICA", "requisitos": ["MEC-200"]},
+                {"codigo": "ELC-277", "nombre": "ELECTROTECNIA INDUSTRIAL I", "requisitos": ["MEC-203"]},
+                {"codigo": "IND-207", "nombre": "METODOLOGIA DE LA INVESTIGACION", "requisitos": ["IND-120", "IND-206"]},
+                {"codigo": "IND-150", "nombre": "INVESTIGACION OPERATIVA I", "requisitos": ["IND-120"]},
+                {"codigo": "IND-201", "nombre": "ADMINISTRACION INDUSTRIAL", "requisitos": ["IND-140"]}
+            ]
+        },
+        {
+            "numero": 6,
+            "cursos": [
+                {"codigo": "IND-175", "nombre": "OPERACIONES UNITARIAS I", "requisitos": ["MEC-265"]},
+                {"codigo": "MEC-255", "nombre": "ELEMENTOS DE MAQUINAS", "requisitos": ["ELC.277", "MEC-242"]},
+                {"codigo": "I", "nombre": "ELECTIVA I", "requisitos": ["ELC-277", "IND-206"]},
+                {"codigo": "IND-208", "nombre": "GESTION DE TALENTO", "requisitos": ["IND-207"]},
+                {"codigo": "IND-155", "nombre": "INVESTIGACION OPERATIVA II", "requisitos": ["IND-150"]},
+                {"codigo": "IND-223", "nombre": "INGENIERIA DE METODOS", "requisitos": ["IND-201", "IND-207"]}
+            ]
+        },
+        {
+            "numero": 7,
+            "cursos": [
+                {"codigo": "IND-176", "nombre": "OPERACIONES UNITARIAS II", "requisitos": ["IND-175"]},
+                {"codigo": "IND-241", "nombre": "CONTROL AUTOMATICO", "requisitos": ["MEC-255"]},
+                {"codigo": "IND-204", "nombre": "HIGIENE Y SEGURIDAD INDUSTRIAL", "requisitos": ["I", "MEC-255"]},
+                {"codigo": "IND-270", "nombre": "FINANZAS PARA LA INGENIERIA", "requisitos": ["IND-208"]},
+                {"codigo": "IND-210", "nombre": "PLANIFICACION CONTROL DE PRODUCCION I", "requisitos": ["IND-155"]},
+                {"codigo": "IND-236", "nombre": "COSTOS INDUSTRIALES I", "requisitos": ["IND-223"]}
+            ]
+        },
+        {
+            "numero": 8,
+            "cursos": [
+                {"codigo": "IND-225", "nombre": "PROCESOS INDUSTRIALES", "requisitos": ["IND-176"]},
+                {"codigo": "IND-285", "nombre": "MEDIO AMBIENTE EN LA INDUSTRIA", "requisitos": ["IND-241"]},
+                {"codigo": "IND-286", "nombre": "MANTENIMIENTO E INTALACIONES INDUSTRIALES", "requisitos": ["IND-204"]},
+                {"codigo": "IND-216", "nombre": "PREPARACION Y EVALUACION DE PROYECTO", "requisitos": ["IND-270"]},
+                {"codigo": "IND-211", "nombre": "PLANIFICACION CONTROL DE PRODUCCION II", "requisitos": ["IND-210"]},
+                {"codigo": "IND-237", "nombre": "COSTOS INDUSTRIALES II", "requisitos": ["IND-236"]}
+            ]
+        },
+        {
+            "numero": 9,
+            "cursos": [
+                {"codigo": "IND-245", "nombre": "CONTROL DE CALIDAD", "requisitos": ["IND-225"]},
+                {"codigo": "II", "nombre": "ELECTIVA II", "requisitos": ["IND-285", "INF-204"]},
+                {"codigo": "IND-242", "nombre": "TECNOLOGIAS AVANZADAS", "requisitos": ["IND-286"]},
+                {"codigo": "IND-226", "nombre": "EMPRENDEDURISMO E INNOVACION", "requisitos": ["IND-216"]},
+                {"codigo": "IND-212", "nombre": "LOGISTICA", "requisitos": ["IND-211"]},
+                {"codigo": "IND-238", "nombre": "PLANEACION ESTRATEGICA", "requisitos": ["IND-237", "IND-211"]}
+            ]
+        },
+        {
+            "numero": 10,
+            "cursos": [
+                {"codigo": "IND-250", "nombre": "PRACTICAS INDUSTRIALES", "requisitos": ["IND-245", "II", "IND-242", "IND-226", "IND-212", "IND-238"]}
+            ]
+        }
+    ]
+}
