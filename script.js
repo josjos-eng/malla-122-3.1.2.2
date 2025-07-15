@@ -36,8 +36,8 @@ function handleLogin() {
     const ru = ruInput.value.trim();
     const name = nameInput.value.trim();
     
-    if (!ru || ru.length !== 8) {
-        alert('Por favor ingresa un RU válido de 8 dígitos.');
+    if (!ru || ru.length !== 9) {
+        alert('Por favor ingresa un Numero de registro válido de 9 dígitos.');
         return;
     }
     
