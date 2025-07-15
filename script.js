@@ -189,7 +189,7 @@ function getEstadoText(estado) {
         case 'pending': return 'Pendiente';
         case 'approved': return 'Aprobada';
         case 'failed': return 'Aplazada';
-        case 'studying': return 'Icrito';
+        case 'studying': return 'Inscrito';
         default: return 'Pendiente';
     }
 }
