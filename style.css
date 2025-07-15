@@ -208,7 +208,7 @@ header h1 i {
     background-color: var(--color-approved);
     color: white;
 }
-.course-card.in-progress {
+.course-card.in-studying {
     background-color: var(--color-studying); /* Usando el nuevo color naranja */
     color: white;
 }
@@ -264,7 +264,7 @@ header h1 i {
 .color-dot.pending { background-color: var(--color-pending); }
 .color-dot.approved { background-color: var(--color-approved); }
 .color-dot.failed { background-color: var(--color-failed); }
-.color-dot.in-progress { 
+.color-dot.in-studying { 
     background-color: var(--color-studying); }
 footer {
     text-align: center;
