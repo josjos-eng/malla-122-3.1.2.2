@@ -158,14 +158,14 @@ function renderMalla(materiasData) {
 
 // Cambiar el estado de un curso
 function changeCourseState(courseCard, codigo) {
-    const estados = ['pending', 'approved', 'failed'];
+    const estados = ['pending', 'approved', 'failed', 'studying'];
     const currentEstado = estados.find(e => courseCard.classList.contains(e)) || 'pending';
     const currentIndex = estados.indexOf(currentEstado);
     const nextIndex = (currentIndex + 1) % estados.length;
     const nextEstado = estados[nextIndex];
     
     // Eliminar clases de estado anteriores
-    courseCard.classList.remove('pending', 'approved', 'failed');
+    courseCard.classList.remove('pending', 'approved', 'failed', 'studying');
     
     // Añadir nuevo estado
     courseCard.classList.add(nextEstado);
@@ -189,7 +189,7 @@ function getEstadoText(estado) {
         case 'pending': return 'Pendiente';
         case 'approved': return 'Aprobada';
         case 'failed': return 'Aplazada';
-        case 'studying': return 'Incrito';
+        case 'studying': return 'Icrito';
         default: return 'Pendiente';
     }
 }
